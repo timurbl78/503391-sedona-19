@@ -1,0 +1,14 @@
+@import "../variables";
+
+.copyright {
+  font-family: "PT Sans", Arial, sans-serif;
+
+}
+
+.copyright__text {
+  font-size: $paragraph-size;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+

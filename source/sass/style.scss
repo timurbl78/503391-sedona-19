@@ -1,3 +1,22 @@
+@import "variables";
+@import "./blocks/button";
+@import "./blocks/page-header";
+@import "./blocks/main-nav";
+@import "./blocks/site-list";
+@import "./blocks/page-main";
+@import "./blocks/about";
+@import "./blocks/advantages";
+@import "./blocks/hotels";
+@import "./blocks/page-footer";
+@import "./blocks/social";
+@import "./blocks/copyright";
+
 body {
-  background: red;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
