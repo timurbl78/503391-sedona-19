@@ -5,6 +5,7 @@
 }
 
 .page-footer__wrapper {
+  box-sizing: border-box;
   width: $mobile-width;
   padding: 0 20px;
   font-family: "PT Sans", Arial, sans-serif;
