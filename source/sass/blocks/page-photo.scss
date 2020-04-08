@@ -3,7 +3,7 @@
 .page-photo {
   width: 100%;
   box-sizing: border-box;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .page-photo__wrapper {
@@ -30,14 +30,6 @@
   text-transform: uppercase;
 }
 
-.page-photo__photos {
-
-}
-
-.page-photo__videos {
-
-}
-
 @media (min-width: $tablet-width) {
   .page-photo__wrapper {
     width: $tablet-width;
@@ -46,10 +38,6 @@
   .page-photo__title {
     font-size: 30px;
     line-height: 26px;
-  }
-
-  .page-photo__text {
-
   }
 }
 

@@ -13,8 +13,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "2.6.x",
     "node-sass": "^4.13.1",
-    "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint": "^10.1.0",
+    "stylelint-config-htmlacademy": "^0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -38,5 +38,9 @@
   ],
   "engines": {
     "node": "8.16"
+  },
+  "dependencies": {
+    "browserslist": "^4.11.1",
+    "caniuse-lite": "^1.0.30001039"
   }
 }
