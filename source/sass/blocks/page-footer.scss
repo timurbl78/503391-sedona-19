@@ -7,9 +7,13 @@
 .page-footer__wrapper {
   box-sizing: border-box;
   width: $mobile-width;
+  margin: 0 auto;
   padding: 0 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   align-items: center;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .page-footer__title {
@@ -23,6 +27,8 @@
   .page-footer__wrapper {
     width: $tablet-width;
     padding: 36px 60px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
