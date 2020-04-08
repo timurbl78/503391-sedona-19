@@ -21,16 +21,19 @@
   box-sizing: border-box;
   background-color: $white-background;
   width: $mobile-width;
+  height: 167px;
   padding: 0 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   text-align: center;
 
   &--blue {
+    height: 452px;
     background-color: $blue;
   }
 
   &--more {
+    height: 121px;
     background-color: #ffffff;
     text-align: left;
   }
@@ -73,9 +76,15 @@
 
   .advantages__item {
     width: 256px;
+    height: 256px;
 
     &--blue {
       width: 100%;
+      height: 256px;
+    }
+
+    &--more {
+      height: 330px;
     }
   }
 
@@ -91,9 +100,5 @@
 
   .advantages__item {
     width: 400px;
-
-    &--blue {
-      width: 100%;
-    }
   }
 }
