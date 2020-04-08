@@ -1,0 +1,16 @@
+@import "../variables";
+
+.button {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 18px 0;
+  background-color: $blue;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}

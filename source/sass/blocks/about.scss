@@ -1,0 +1,45 @@
+@import "../variables";
+
+.about {
+  width: $mobile-width;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "PT Sans", "Arial", sans-serif;
+  padding: 0 20px;
+}
+
+.about__title {
+  margin: 0;
+  font-size: $mini-title-size-mobile;
+  line-height: $mini-title-line-height;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about__text {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: $paragraph-size;
+  line-height: 26px;
+  color: $grey;
+}
+
+
+@media (min-width: $tablet-width) {
+  .about {
+    width: $tablet-width;
+    padding: 0 60px;
+  }
+
+  .about__title {
+    font-size: $mini-title-size;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    width: $desktop-width;
+    padding: 0 200px;
+  }
+}

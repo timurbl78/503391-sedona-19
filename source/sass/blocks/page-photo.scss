@@ -1,0 +1,48 @@
+@import "../variables";
+
+.page-photo {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.page-photo__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.page-photo__title {
+  margin: 0;
+  text-align: center;
+  font-size: $mini-title-size-mobile;
+  line-height: $mini-title-line-height;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.page-photo__text {
+  margin: 0;
+  text-align: center;
+  font-size: $paragraph-size;
+  line-height: 24px;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-photo__wrapper {
+    width: $tablet-width;
+  }
+
+  .page-photo__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-photo__wrapper {
+    width: $desktop-width;
+  }
+}

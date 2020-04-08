@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../source/css/style.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
 
 <header class="page-header">
-  <a class="page-header__logo">
-    <img class="page-header__logo-image" alt="Городок Седона" src="https://via.placeholder.com/150x150">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#" class="site-list__item-link">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__item-link">Фото и видео</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__item-link">Форма отзыва</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__item-link">HTML Academy</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="page-header__wrapper">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" alt="Городок Седона" src="https://via.placeholder.com/150x150">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#" class="site-list__item-link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__item-link">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__item-link">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__item-link">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 <main class="page-photo">
   <div class="page-photo__wrapper">
@@ -68,21 +73,26 @@
         </li>
       </ul>
     </section>
-    <section class="page-photo__videos videos">
-      <h2 class="videos__title">Все еще сомневаетесь?</h2>
-      <p class="videos__text">
-        Смотрите видеопрезентацию и
-        скорее за билетами, пока они не
-        подорожали в очередной раз!
-      </p>
-      <img src="https://via.placeholder.com/150x150">
+
+    <section class="page-photo__trailer trailer">
+      <div class="trailer__wrapper">
+        <div class="trailer__info-block">
+          <h2 class="trailer__title">Все еще сомневаетесь?</h2>
+          <p class="trailer__text">
+            Смотрите видеопрезентацию и
+            скорее за билетами, пока они не
+            подорожали в очередной раз!
+          </p>
+        </div>
+        <img src="https://via.placeholder.com/150x150">
+      </div>
     </section>
   </div>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
+    <b class="page-footer__title">#visitsedona</b>
     <div class="page-footer__social social">
-      <b class="social__title">#visitsedona</b>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>

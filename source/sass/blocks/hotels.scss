@@ -1,0 +1,43 @@
+@import "../variables";
+
+.hotels {
+  width: 100%;
+}
+
+.hotels__wrapper {
+  text-align: center;
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.hotels__title {
+  margin: 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: $mini-title-size;
+  line-height: $mini-title-line-height;
+}
+
+.hotels__text {
+  margin: 0;
+  color: $grey;
+  font-size: $paragraph-size;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .hotels__wrapper {
+    padding: 0;
+    margin: 0 auto;
+    width: 458px;
+  }
+
+  .hotels__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
