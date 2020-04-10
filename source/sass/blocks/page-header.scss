@@ -6,13 +6,33 @@
 }
 
 .page-header__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: $mobile-width;
   margin: 0 auto;
+}
+
+.page-header__image-wrapper {
+  order: 2;
+  width: $mobile-width;
+  height: 56px;
+  text-align: center;
+  background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     width: $tablet-width;
+  }
+
+  .page-header__image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 101px;
+    margin: auto;
   }
 }
 
