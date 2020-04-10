@@ -5,11 +5,11 @@
   box-sizing: border-box;
   text-align: center;
   font-family: "PT Sans", "Arial", sans-serif;
-  padding: 0 20px;
+  padding: 0 21px;
 }
 
 .about__title {
-  margin: 0;
+  margin: 43px 0 35px;
   font-size: $mini-title-size-mobile;
   line-height: $mini-title-line-height;
   color: #000000;
@@ -18,7 +18,7 @@
 }
 
 .about__text {
-  margin: 0;
+  margin: 0 0 27px;
   text-transform: uppercase;
   font-size: $paragraph-size;
   line-height: 26px;
@@ -33,7 +33,13 @@
   }
 
   .about__title {
+    margin-left: 78px;
+    margin-right: 78px;
     font-size: $mini-title-size;
+  }
+
+  .about__text {
+    margin: 0 0 50px;
   }
 }
 
@@ -41,5 +47,10 @@
   .about {
     width: $desktop-width;
     padding: 0 200px;
+  }
+
+  .about__title {
+    margin-left: 90px;
+    margin-right: 90px;
   }
 }
