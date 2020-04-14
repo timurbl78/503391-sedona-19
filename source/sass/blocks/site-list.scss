@@ -12,11 +12,23 @@
 }
 
 .site-list__item {
+  box-sizing: border-box;
   display: block;
   width: $mobile-width;
-  padding: 21px 0;
+  height: 56px;
+  padding: 15px 0;
   text-align: center;
   background-color: $blue;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .site-list__item-link {
@@ -37,6 +49,8 @@
 
   .site-list__item {
     width: 153px;
+    height: auto;
+    border: none;
     display: block;
     padding: 23px 0;
     text-align: center;
