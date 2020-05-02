@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
@@ -43,7 +44,7 @@
       <h1 class="visually-hidden">Городок Седона</h1>
 
       <section class="page-main__about about">
-        <h2 class="about__title">Седона &#0151; небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="about__title">Седона &#8211; небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="about__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
 
@@ -51,20 +52,24 @@
         <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--blue">
-              <div class="advantages__content">
-                <h2 class="advantages__title">Настоящий городок</h2>
-                <b class="advantages__number">- №1 -</b>
+              <div class="advantages__content advantages__content--no-border">
+                <h2 class="advantages__title">Настоящий<br class="br br--no-mobile br--desktop"> городок</h2>
+                <b class="advantages__number">&#8211; №1 &#8211;</b>
                 <p class="advantages__text">
                   Седона не аттракцион для туристов,
                   там течет своя жизнь
                 </p>
               </div>
               <div class="advantages__image-wrapper">
-                <img class="advantages__image" alt="Мост Дьявола" src="https://via.placeholder.com/150x150">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                  <img class="advantages__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Настоящий городок">
+                </picture>
               </div>
             </li>
-            <li class="advantages__item advantages__item--more">
-              <div class="advantages__content">
+            <li class="advantages__item advantages__item--more advantages__item--more-house advantages__item--first-more">
+              <div class="advantages__content advantages__content--no-border">
                 <h2 class="advantages__title">Жилье</h2>
                 <p class="advantages__text">
                   Рекомендуем пожить в
@@ -73,62 +78,66 @@
                 </p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--more">
-              <div class="advantages__content">
+            <li class="advantages__item advantages__item--more advantages__item--more-souvenirs">
+              <div class="advantages__content advantages__content--no-border">
                 <h2 class="advantages__title">Сувениры</h2>
                 <p class="advantages__text">
-                  Не только китайского, но и
+                  Не только китайского,<br class="br br--no-mobile br--desktop"> но и
                   местного производства!
                 </p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--more">
-              <div class="advantages__content">
+            <li class="advantages__item advantages__item--more advantages__item--more-food advantages__item--last-more">
+              <div class="advantages__content advantages__content--no-border">
                 <h2 class="advantages__title">Еда</h2>
                 <p class="advantages__text">
                   Всегда заказывайте
-                  фирменный бургер, вы не
+                  фирменный бургер,<br class="br br--no-mobile br--tablet"> вы не
                   разочаруетесь!
                 </p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--blue">
-              <div class="advantages__content ">
-                <h2 class="advantages__title">Там есть мост дьявола</h2>
-                <b class="advantages__number">- №2 -</b>
+            <li class="advantages__item advantages__item--blue advantages__item--reverse">
+              <div class="advantages__content advantages__content--no-border">
+                <h2 class="advantages__title">Там есть<br class="br br--no-mobile br--tablet"> мост дьявола</h2>
+                <b class="advantages__number">&#8211; №2 &#8211;</b>
                 <p class="advantages__text">
-                  Да, по нему можно пройти! Если вы
+                  Да, по нему можно пройти!<br class="br br--no-mobile br--desktop"> Если вы
                   осмелитесь, конечно
                 </p>
               </div>
               <div class="advantages__image-wrapper">
-                <img class="advantages__image" alt="Мост Дьявола" src="https://via.placeholder.com/150x150">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                  <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                </picture>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__content advantages__content--no-top">
+                  <h2 class="advantages__title">Небольшая<br class="br br--no-mobile br--desktop"> площадь</h2>
+                  <b class="advantages__number">&#8211; №3 &#8211;</b>
+                  <p class="advantages__text">
+                    Все интересные места находятся
+                    очень близко
+                  </p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__content">
-                <h2 class="advantages__title">Небольшая площадь</h2>
-                <b class="advantages__number">- №3 -</b>
-                <p class="advantages__text">
-                  Все интересные места находятся
-                  очень близко
-                </p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__content">
-                <h2 class="advantages__title">Красивая дорога</h2>
-                <b class="advantages__number">- №4 -</b>
+                <h2 class="advantages__title">Красивая<br class="br br--no-mobile br--desktop"> дорога</h2>
+                <b class="advantages__number">&#8211; №4 &#8211;</b>
                 <p class="advantages__text">
                   Ехать в Седону из Лас-Вегаса
-                  совсем не скучно!
+                  совсем<br class="br br--no-mobile br--tablet"> не скучно!
                 </p>
               </div>
             </li>
             <li class="advantages__item">
-              <div class="advantages__content">
-                <h2 class="advantages__title">Мало туристов</h2>
-                <b class="advantages__number">- №5 -</b>
+              <div class="advantages__content advantages__content--no-bottom">
+                <h2 class="advantages__title">Мало<br class="br br--no-mobile br--desktop"> туристов</h2>
+                <b class="advantages__number">&#8211; №5 &#8211;</b>
                 <p class="advantages__text">
                   Большинство едет в Гранд Каньон
                   и толпится там
@@ -143,7 +152,7 @@
         <div class="hotels__wrapper">
           <h2 class="hotels__title">Заинтересовались?</h2>
           <p class="hotels__text">Укажите предполагаемые даты
-            поездки, и мы покажем вам лучшие
+            поездки,<br class="br br--no-mobile br--tablet"> и мы покажем вам лучшие
             предложения гостиниц в Седоне</p>
           <a class="hotels__link button" href="#">Найти гостиницу</a>
         </div>
@@ -176,7 +185,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>

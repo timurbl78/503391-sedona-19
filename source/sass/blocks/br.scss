@@ -1,0 +1,33 @@
+@import "../variables";
+
+.br {
+  display: inline;
+}
+
+.br--no-mobile {
+  display: none;
+}
+
+.br--mobile {
+  display: inline;
+}
+
+@media (min-width: $tablet-width) {
+  .br--tablet {
+    display: inline;
+  }
+
+  .br--no-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .br--desktop {
+    display: inline;
+  }
+
+  .br--no-desktop {
+    display: none;
+  }
+}
