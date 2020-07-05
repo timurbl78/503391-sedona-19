@@ -1,0 +1,35 @@
+@import "../variables";
+
+.main-photo-info {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px 27px;
+}
+
+.main-photo-info__title {
+  margin: 0;
+  padding: 14px 0 27px;
+  text-align: center;
+  font-size: $mini-title-size-mobile;
+  line-height: $mini-title-line-height;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-photo-info__text {
+  margin: 0;
+  text-align: center;
+  font-size: $paragraph-size;
+  line-height: 24px;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-photo-info__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}

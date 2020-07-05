@@ -28,7 +28,9 @@
 }
 
 .photos__title {
+  display: block;
   margin: 0;
+  padding-top: 10px;
   font-size: $paragraph-size;
   line-height: 24px;
   font-weight: bold;
@@ -44,10 +46,24 @@
 }
 
 .photos__like {
+  display: block;
+  padding: 8px 0 0 36px;
+  position: relative;
   font-size: $paragraph-size;
   line-height: 24px;
   font-weight: bold;
   color: #000000;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 22px;
+    height: 20px;
+    background-image: url("../../img/icon-like.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -70,7 +86,6 @@
     }
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .photos {

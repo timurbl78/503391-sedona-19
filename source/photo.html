@@ -12,14 +12,16 @@
 
 <header class="page-header">
   <div class="page-header__wrapper">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" alt="Городок Седона" src="https://via.placeholder.com/150x150">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="page-header__image-wrapper">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" alt="Городок Седона" src="https://via.placeholder.com/101x83">
+      </a>
+    </div>
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="index.html" class="site-list__item-link">Главная</a>
           </li>
           <li class="site-list__item">
@@ -39,35 +41,53 @@
 <main class="page-photo">
   <div class="page-photo__wrapper">
 
-    <h2 class="page-photo__title">Фото и видео</h2>
-    <p class="page-photo__text">
-      Не можете решиться на путешествие
-      из-за курса? Фотографии помогут
-      Вам забыть о политике и экономике.
-    </p>
+    <section class="page-photo__main-photo-info main-photo-info">
+      <h2 class="main-photo-info__title">Фото и видео</h2>
+      <p class="main-photo-info__text">
+        Не можете решиться на путешествие
+        из-за курса? Фотографии помогут<br class="br br--mobile">
+        Вам забыть о политике и экономике.
+      </p>
+    </section>
 
     <section class="page-photo__photos photos">
       <ul class="photos__list">
         <li class="photos__item">
-          <img class="photos__photo" alt="Неродные просторы" src="https://via.placeholder.com/280x280">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+            <img class="photos__photo" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+          </picture>
           <b class="photos__title">Неродные просторы</b>
           <p class="photos__author">Автор фото: Борис</p>
           <span class="photos__like">1350</span>
         </li>
         <li class="photos__item">
-          <img class="photos__photo" alt="Местная растительность" src="https://via.placeholder.com/280x280">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+            <img class="photos__photo" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+          </picture>
           <b class="photos__title">Местная растительность</b>
           <p class="photos__author">Автор фото: Сергей</p>
           <span class="photos__like">143</span>
         </li>
         <li class="photos__item">
-          <img class="photos__photo" alt="Дорога на север" src="https://via.placeholder.com/280x280">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+            <img class="photos__photo" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+          </picture>
           <b class="photos__title">Дорога на север</b>
           <p class="photos__author">Автор фото: Петр</p>
           <span class="photos__like">96</span>
         </li>
         <li class="photos__item">
-          <img class="photos__photo" alt="Мост Дьявола" src="https://via.placeholder.com/280x280">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+            <img class="photos__photo" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+          </picture>
           <b class="photos__title">Мост Дьявола</b>
           <p class="photos__author">Автор фото: Антон</p>
           <span class="photos__like">254  </span>
