@@ -28,8 +28,21 @@
 
 
 @media (min-width: $tablet-width) {
+  .main-photo-info {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
   .main-photo-info__title {
     font-size: 30px;
     line-height: 26px;
+    padding-bottom: 32px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-photo-info {
+    padding: 58px 380px 71px;
   }
 }
