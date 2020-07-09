@@ -1,1 +1,59 @@
 @import "../variables";
+
+
+.map {
+  width: 100%;
+}
+
+.map__wrapper {
+  padding-top: 29px;
+  height: 350px;
+  width: 100%;
+
+  background-image: url("../../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 350px;
+  background-position-y: 29px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    background-position-y: 29px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .map__wrapper {
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    background-position-y: 29px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 350px;
+      background-position-y: 29px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .map__wrapper {
+    padding-top: 36px;
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    background-position-y: 36px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 350px;
+      background-position-y: 36px;
+    }
+  }
+}
