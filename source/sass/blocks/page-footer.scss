@@ -8,7 +8,7 @@
   box-sizing: border-box;
   width: $mobile-width;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 35px 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   align-items: center;
 
@@ -20,6 +20,7 @@
   color: #000000;
   font-weight: bold;
   font-size: $mini-title-size;
+  text-transform: uppercase;
   line-height: $mini-title-line-height;
 }
 

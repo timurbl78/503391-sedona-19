@@ -13,6 +13,11 @@
   margin: 0 auto;
 }
 
+.page-header__logo-sedona use symbol g .logo-desktop,
+.page-header__logo-sedona .logo-tablet {
+  opacity: 0;
+}
+
 .page-header__image-wrapper {
   order: 2;
   width: $mobile-width;

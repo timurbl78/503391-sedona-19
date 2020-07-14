@@ -11,15 +11,15 @@
   margin: 0 auto;
   padding-top: 170px;
 
-  background-image: url("../../img/text-sedona.svg"), url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-size: 230px 230px, 100% 158px;
-  background-position: top -45px center, top;
+  background-size: 230px 40px, 100% 158px;
+  background-position: top 49px center, top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/text-sedona.svg"), url("../../img/bg-back-mobile@2x.jpg");
-    background-size: 230px 230px, 100% 158px;
-    background-position: top -45px center, top;
+    background-image: url("../img/text-sedona.svg"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 230px 40px, 100% 158px;
+    background-position: top 49px center, top;
   }
 }
 
@@ -28,15 +28,15 @@
     width: $tablet-width;
     padding-top: 339px;
 
-    background-image: url("../../img/text-sedona.svg"), url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: 458px 458px, 100% 290px;
-    background-position: top -97px center, top;
+    background-size: 458px 82px, 100% 290px;
+    background-position: top 93px center, top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/text-sedona.svg"), url("../../img/bg-back-tablet@2x.jpg");
-      background-size: 458px 458px, 100% 290px;
-      background-position: top -97px center, top;
+      background-image: url("../img/text-sedona.svg"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: 458px 82px, 100% 290px;
+      background-position: top 93px center, top;
     }
   }
 }
@@ -48,13 +48,13 @@
 
     background-image: url("../../img/text-sedona.svg"), url("../../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: 458px 458px, 100% 300px;
-    background-position: top -87px center, top;
+    background-size: 458px 82px, 100% 300px;
+    background-position: top 100px center, top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/text-sedona.svg"), url("../../img/bg-back-desktop@2x.jpg");
-      background-size: 458px 458px, 100% 300px;
-      background-position: top -87px center, top;
+      background-size: 458px 82px, 100% 300px;
+      background-position: top 100px center, top;
     }
   }
 }

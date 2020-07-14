@@ -1,1 +1,48 @@
 @import "../variables";
+
+
+.social {
+  margin: 0 auto;
+  padding: 38px 0;
+}
+
+.social__list {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.social__item {
+  display: block;
+  position: relative;
+}
+
+.social__link {
+  display: block;
+  font-size: 0;
+  width: 45px;
+  height: 46px;
+  text-transform: none;
+  background-color: $blue;
+  fill: white;
+}
+
+.social__icon-tw,
+.social__icon-fb,
+.social__icon-ut {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

@@ -2,11 +2,19 @@
 
 .copyright {
   font-family: "PT Sans", "Arial", sans-serif;
+  display: flex;
 }
 
 .copyright__text {
-  font-size: $paragraph-size;
+  display: block;
+  padding: 5px 7px;
+  font-size: 15px;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+  font-weight: normal;
+}
+
+.copyright__link {
+  font-size: 0;
 }
